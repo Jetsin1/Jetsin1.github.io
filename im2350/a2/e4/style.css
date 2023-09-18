@@ -93,7 +93,7 @@ background: linear-gradient(to right, #21754e, #003a5c);
   cursor: pointer;
   border-style:outset;
   border-radius: 10px;
-  background-color: #00a2ff;
+  background-color: #ffd078;
 }
 .audio-control-button:hover{
   background-color: var(--col-05);
