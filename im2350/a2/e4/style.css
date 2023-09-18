@@ -87,9 +87,13 @@ background: linear-gradient(to right, #21754e, #003a5c);
 .audio-control-button{
   width: 2rem;
   height: 2rem;
-  padding: .1rem;
-  border: none;
+  padding: 10px;
+  margin: 5px;
+  border: #969696;
   cursor: pointer;
+  border-style:outset;
+  border-radius: 10px;
+  background-color: #00a2ff;
 }
 .audio-control-button:hover{
   background-color: var(--col-05);
