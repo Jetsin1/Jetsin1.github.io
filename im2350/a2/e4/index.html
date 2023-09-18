@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 
+<!-- no attribution required -->
+
+<!-- here's the collection of links for the different tracks - you'll need to work out what to do with them -->
+
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Dry-Down-feat-Ben-Snaath.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Leapt.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Water-Feature.mp3 -->
+
 <html lang="en">
-<!-- the head tag doesn't show up in the window, it only contains metadata -->
+
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>hase's boilerplate</title>
-
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackTrove</title>
+    <!-- Favicon: -->
+    <link rel="icon" type="image/x-icon" href="/vector-headphones-icon-symbol-sign.jpg">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="playerControls.js" defer></script>
 
   </head>
 
+  <div>
+  <h1>TrackTrove</h1>
+    <button class="lightDark" id="lightDark">Light/Dark</button>
+  </div>
   <body>
+    
 
-    <h1>This is my boilerplate</h1>
+    <!-- this element holds all of the media player -->
+    <div class="audio-player-wrapper">
+      <!-- this element holds the audio element and the overlay -->
+      <div class="audio-element-wrapper">
+
+        <!-- This is just an image placeholder, feel free to replace or not -->
+        <img id="heroImage" src="./bg-band.png" alt="">
+
+        <audio id="audioElement" controls>
+          <!-- <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3" type="audio/mp3"> -->
+        </audio>
+
+        <img id="audioPlayOverlay" src="./icons/play.svg">
+
+      </div>
+
+
+
+      <!-- this element holds all of the custom controls -->
+      <div class="audio-controls-wrapper" id="controlsWrapper">
+
+        <button class="audio-control-button" id="loop"></button>
+        <button class="audio-control-button" id="rewind"></button>
+        <button class="audio-control-button" id="playButton"></button>
+        <button class="audio-control-button" id="Next"></button>
+        <button class="audio-control-button" id="mute"></button>
+
+        <progress class="audio-progress-bar" id="progressBar" value="0"></progress>
+
+      </div>
+
+    </div>
+
+
+    <!-- Here are all the different buttons for each of the different songs -->
+    <div class="Playlist" id="Playlist">Album<br>
+      <button class="songs" id="song1">p-hase_Hes</button><br>
+      <button class="songs" id="song2">p-hase_Dry-Down-feat-Ben-Snaath</button><br>
+      <button class="songs" id="song3">p-hase_Leapt</button><br>
+      <button class="songs" id="song4">p-hase_Water-Feature</button><br>
+
+    </div>
+
 
   </body>
 
