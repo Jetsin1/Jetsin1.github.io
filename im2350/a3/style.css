@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    background-origin: border-box;
+    margin: 0;
+}
+  
+body{
+    align-items: center;
+    justify-content: center;
+    border: #222323;
+    border: 019cm;
+    /* overflow: hidden; This Hides the scrollbars */
+    background-color: #222323;
+    background-image: url("images/Environment/Background2.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.M-era{
+    top: 20%;
+    position: sticky;
+
+}
+
+
+
+
+
+h1{
+    font-size: 150px;
+    color:#f9ffb9;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    top: 20%;
+    position: sticky;
+    scale: 0.1;
+    text-shadow:    /* adds an outline to text */
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    1px 1px 0 #000;
+    z-index: 1;
+}
+
+h2{
+    position: fixed;
+    font-size: 20px;
+    color:hsl(52, 100%, 86%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    position: relative;
+    scale: 1;
+    text-shadow:    /* adds an outline to text */
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    1px 1px 0 #000;
+}
+
+p{
+    font-size: 150px;
+    font-weight:bold;
+    color:#f9ffb9;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -250px;
+    scale: 0.0001;
+    text-shadow:    /* adds an outline to text */
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    1px 1px 0 #000;
+    z-index: 2;
+}
+
+.pics{
+    top: 50%; 
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    scale: 0.001 /* starting from a very very small scale so that no one can see it on the screen */
+}
+
+
+#bush1{
+
+    background-image: url("images/Environment/ground-bush1.png");
+  
+}
+
+#bush2{
+    background-image: url("images/Environment/ground-bush2.png");
+
+}
+
+#bush3{
+    background-image: url("images/Environment/ground-bush3.png");
+
+}
+
+#tridino1{
+    background-image: url("images/1Triassic/Eoraptor.png");
+}
+
+#tridino2{
+    background-image: url("images/1Triassic/herrerasaurus.png");
+
+}
+
+#tridino3{
+    background-image: url("images/1Triassic/Eoraptor.png");
+
+}
+
+.blank-space {
+    height: 100000px; /* Set the height to create white space */
+}
